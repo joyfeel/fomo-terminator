@@ -82,9 +82,16 @@
     let realResult = ''
     let counter = 0
     let myFunction = async () => {
-      // https://fomo4d.io/                     0x9872ffc47ff6ae0cbdec2f68bb88ad3169d69afc 
-      // http://exitscam.me/quick               0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8
-
+      /*
+        https://fomo4d.io/                     
+        0x9872ffc47ff6ae0cbdec2f68bb88ad3169d69afc 
+        https://etherscan.io/address/0x9872ffc47ff6ae0cbdec2f68bb88ad3169d69afc
+      */
+      /*
+        http://exitscam.me/quick
+        0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8
+        https://etherscan.io/address/0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8
+      */
       const ethAddr = '0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8'
       const res = await fetch(`https://api.etherscan.io/api?module=proxy&action=eth_call&to=${ethAddr}&data=0xc7e284b8707c54872b29498540b8761f562eea7be56ee7ab8cac943ac318be5d`);
       const json = await res.json();
