@@ -109,9 +109,9 @@
 
         let googleLadyAudio = document.getElementById('google-lady');
         
-        if (currentSecond >= 90 && currentSecond <= 300) {
+        if (currentSecond >= 90) {
           // 4 to 5 minutes
-          //googleLadyAudio.src = './5minutes.mp3'
+          googleLadyAudio.src = ''
           document.body.style.backgroundColor = 'green';
         } else if (currentSecond >= 60 && currentSecond < 90) {
           // up 3 minutes
