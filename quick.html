@@ -85,7 +85,7 @@
       // https://fomo4d.io/                     0x9872ffc47ff6ae0cbdec2f68bb88ad3169d69afc 
       // http://exitscam.me/quick               0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8
 
-      const ethAddr = '0x9872ffc47ff6ae0cbdec2f68bb88ad3169d69afc'
+      const ethAddr = '0x4e8ecf79ade5e2c49b9e30d795517a81e0bf00b8'
       const res = await fetch(`https://api.etherscan.io/api?module=proxy&action=eth_call&to=${ethAddr}&data=0xc7e284b8707c54872b29498540b8761f562eea7be56ee7ab8cac943ac318be5d`);
       const json = await res.json();
       second = parseInt(json.result, 16);
@@ -106,11 +106,11 @@
           // 4 to 5 minutes
           //googleLadyAudio.src = './5minutes.mp3'
           document.body.style.backgroundColor = 'green';
-        } else if (currentSecond >= 55 && currentSecond < 90) {
+        } else if (currentSecond >= 60 && currentSecond < 90) {
           // up 3 minutes
           googleLadyAudio.src = './2keys.mp3'
           document.body.style.backgroundColor = 'yellow';
-        } else if (currentSecond < 55) {
+        } else if (currentSecond < 60) {
           // 1:40 to 3:00 minutes
           googleLadyAudio.src = './go.mp3'
           document.body.style.backgroundColor = 'red';
